@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "http-server": "^14.0.0"
+  },
+  "name": "hulu-clone",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaju007/hulu-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaju007/hulu-clone/issues"
+  },
+  "homepage": "https://github.com/shaju007/hulu-clone#readme",
+  "devDependencies": {
+    "cypress": "^9.1.0"
+  }
+}
