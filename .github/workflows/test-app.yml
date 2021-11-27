@@ -14,3 +14,8 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm start
+      - uses: actions/upload-artifact@v1
+        if: always() # / if: failure() <- more suitable for production
+        with:
+          name: cypress-videos
+          path: cypress/videos
