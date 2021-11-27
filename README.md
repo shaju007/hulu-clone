@@ -1,1 +1,1 @@
-# hulu-clone
+# hulu-clone with cypress added
