@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "http-server": "^14.0.0"
+    "http-server": "^14.0.0",
+    "start-server-and-test": "^1.14.0"
   },
   "name": "hulu-clone",
   "description": "",
@@ -8,7 +9,12 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "start": "http-server"
+    "start": "http-server",
+    "serve": "serve -p 5000",
+    "buildDocker": "docker build -t cypress-test:v1 .",
+    "testDocker": "docker run -v ${PWD}:/e2e -w /e2e cypress-test:v1",
+    "cy:run:chrome": "cypress run --browser=chrome",
+    "test:chrome": "start-server-and-test start http://localhost:5000 cy:run:chrome"
   },
   "repository": {
     "type": "git",
